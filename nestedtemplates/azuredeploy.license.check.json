@@ -277,7 +277,7 @@
   },
   "variables": {
         "nestedtemplatevar": "['nestedtemplates/azuredeploy.infrastructure.json']",
-        "nestedtemplateUri": "[uri(parameters('_artifactsLocation'), variables('nestedtemplatevar'))]"
+        "nestedtemplateUri": "https://raw.githubusercontent.com/SheldonPi1999/azure-kubernetes-molecule-quickstart/main/nestedtemplates/azuredeploy.infrastructure.json"
    },
   "resources": [
     {
