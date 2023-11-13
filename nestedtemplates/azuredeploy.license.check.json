@@ -276,7 +276,7 @@
       }
   },
   "variables": {
-        "nestedtemplatevar": "[concat('nestedtemplates/azuredeploy.infrastructure.json',parameters('_artifactsLocationSasToken'))]",
+        "nestedtemplatevar": "['nestedtemplates/azuredeploy.infrastructure.json']",
         "nestedtemplateUri": "[uri(parameters('_artifactsLocation'), variables('nestedtemplatevar'))]"
    },
   "resources": [
