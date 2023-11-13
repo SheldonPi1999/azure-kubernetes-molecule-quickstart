@@ -267,7 +267,7 @@
       "metadata" : {
         "description": "The base Url for dependent assets"
       },
-      "defaultValue": "https://github.com/SheldonPi1999/azure-kubernetes-molecule-quickstart"
+      "defaultValue": "https://raw.githubusercontent.com/SheldonPi1999/azure-kubernetes-molecule-quickstart"
     },
     "_artifactsLocationSasToken": {
           "type": "securestring",
