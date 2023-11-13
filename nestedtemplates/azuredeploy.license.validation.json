@@ -61,9 +61,9 @@
         "nestedtscriptvar1": "[concat('scripts/license_validation.sh',parameters('_artifactsLocationSasToken'))]",
         "nestedtscriptvar2": "[concat('scripts/requirements.txt',parameters('_artifactsLocationSasToken'))]",
         "nestedtscriptvar3": "[concat('scripts/license_validation.py',parameters('_artifactsLocationSasToken'))]",
-        "nestedtscriptUri1": "[uri(parameters('_artifactsLocation'), variables('nestedtscriptvar1'))]",
-        "nestedtscriptUri2": "[uri(parameters('_artifactsLocation'), variables('nestedtscriptvar2'))]",
-        "nestedtscriptUri3": "[uri(parameters('_artifactsLocation'), variables('nestedtscriptvar3'))]"
+        "nestedtscriptUri1": "https://raw.githubusercontent.com/SheldonPi1999/azure-kubernetes-molecule-quickstart/main/scripts/license_validation.sh",
+        "nestedtscriptUri2": "https://raw.githubusercontent.com/SheldonPi1999/azure-kubernetes-molecule-quickstart/main/scripts/requirements.txt",
+        "nestedtscriptUri3": "https://raw.githubusercontent.com/SheldonPi1999/azure-kubernetes-molecule-quickstart/main/scripts/license_validation.py"
     },
   "resources": [
     {
