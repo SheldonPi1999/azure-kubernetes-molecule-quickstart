@@ -267,7 +267,7 @@
       "metadata" : {
         "description": "The base Url for dependent assets"
       },
-      "defaultValue": "[deployment().properties.templateLink.uri]"
+      "defaultValue": "https://github.com/SheldonPi1999/azure-kubernetes-molecule-quickstart"
     },
     "_artifactsLocationSasToken": {
           "type": "securestring",
@@ -278,8 +278,8 @@
       }
   },
   "variables": {
-        "nestedtemplatevar1": "[concat('nestedtemplates/azuredeploy.license.validation.json', parameters('_artifactsLocationSasToken'))]",
-        "nestedtemplatevar2": "[concat('nestedtemplates/azuredeploy.license.check.json', parameters('_artifactsLocationSasToken'))]",
+        "nestedtemplatevar1": "['nestedtemplates/azuredeploy.license.validation.json']",
+        "nestedtemplatevar2": "['nestedtemplates/azuredeploy.license.check.json']",
         "nestedtemplateUri1": "[uri(parameters('_artifactsLocation'), variables('nestedtemplatevar1') )]",
         "nestedtemplateUri2": "[uri(parameters('_artifactsLocation'), variables('nestedtemplatevar2') )]"
    },
